@@ -1,1 +1,5 @@
-<p>todolist works!</p>
+<ul>
+    @for(item of items; track item; let i = $index){
+  <li> {{ items[i].title }} </li>
+    }
+</ul>
