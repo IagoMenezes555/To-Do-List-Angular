@@ -1,5 +1,7 @@
 <ul>
     @for(item of items; track item; let i = $index){
-  <li> {{ items[i].title }} </li>
+  <li> {{ items[i].title }}, {{ items[i].id }} </li>
     }
 </ul>
+
+<app-add (itemEvent)="received($event)"></app-add>

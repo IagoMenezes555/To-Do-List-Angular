@@ -1,1 +1,6 @@
-<p>add works!</p>
+<div class="inputs">
+  <input type="text" placeholder="Nome da tarefa" [(ngModel)]="taskName"/>
+  <input type="text" placeholder="Descrição da tarefa" />
+</div>
+
+<button (click)="newTask()">Enviar</button>
