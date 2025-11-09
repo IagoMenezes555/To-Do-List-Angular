@@ -12,6 +12,10 @@ export class TodolistComponent {
   items: Item[] = [];
 
   constructor() {
+    const list = localStorage.getItem('tasks');
+    if (list !== null) {
+      this.items = JSON.parse(list);
+    }
   }
 
   received(task: Item) {
